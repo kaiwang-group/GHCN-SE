@@ -41,20 +41,25 @@ tqdm: 4.67.1
 
 ## Usage
 
-### Datasets 
+### Data 
 
 - The folder ```Data/Dataset/BiGG dataset``` contains 108 BiGG GEMs, which are also available in other sources http://bigg.ucsd.edu/models.
 - The folder ```Data/Dataset/Reaction pool``` contains the universal reaction pool, which is also available in other sources https://github.com/canc1993/cheshire-gapfilling/tree/main/data/pools.
+- The folder ```Data/Trained model``` contains the trained models on iBWG_1329 GEM.
+- The folder ```Data/Reaction Prediction Evaluation``` contains the detailed data of GHCN-SE on reaction prediction evaluation.
+- The folder ```Data/Reaction Recovery Evaluation``` contains the detailed data of GHCN-SE on reaction recovery evaluation.
 
 ### Reaction Prediction Evaluation
 
 - The codes are available in the folder ```GHCN-SE_prediction``` for evaluting reaction prediction performances of GHCN-SE.
-- We can run the script ```GHCN-SE_prediction/main.py``` to conduct 5-fold cross-validations for evaluting reaction prediction performances of GHCN-SE on 108 GEMs. 
-- The folder ```Data/Trained model/Trained_model (prediction)/iBWG_1329``` contains the trained GHCN-SE models for 5-fold cross-validations on iBWG_1329 (one of the 108 GEMs). 
+- We can run the script ```GHCN-SE_prediction/main.py``` to conduct 5-fold cross-validations for evaluting reaction prediction performances of GHCN-SE on 108 GEMs.
+- - We can run the script ```GHCN-SE_prediction/test.py``` to test the reaction prediction performances of GHCN-SE on trained GEMs. 
+- The folder ```Data/Trained model/Trained_model (prediction)/iBWG_1329``` contains the trained GHCN-SE models for 5-fold cross-validations on iBWG_1329 (one of the 108 GEMs).
 - The evaluation results of prediction performances by GHCN-SE are summarized and available in ```Data/Reaction Prediction Evaluation```.
 
 ### Reaction Recovery Evaluation
 
 - The codes are available in the folder ```GHCN-SE_recovery``` for evaluting reaction recovery performances of GHCN-SE.
-- We can run the script ```GHCN-SE_recovery/main.py``` to evaluate reaction recovery performances of GHCN-SE on 108 GEMs. 
+- We can run the script ```GHCN-SE_recovery/main.py``` to evaluate reaction recovery performances of GHCN-SE on 108 GEMs.
+- We can run the script ```GHCN-SE_recovery/test.py``` to test the reaction recovery performances of GHCN-SE on trained GEMs. 
 - The evaluation results of reaction recovery performances by GHCN-SE are summarized and available in ```Data/Reaction Recovery Evaluation```.
